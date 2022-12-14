@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Lawn and Snow Removal</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="icon" href="../IMAGES/grass.ico.ico">
+        <style>
+ 
+        </style>
+    </head>
+    <body>
+        <section id="header">
+            <div style="display: inline-block;">
+            <img src="../IMAGES/logo.png" class="logo">
+            </div>
+             <div style="display: inline-block;"> 
+            <h1 >LAWN & SNOW</h1>
+            </div>
+            <div class="navbar">
+                <a class="btn" href="index.html">SNOW REMOVAL</a>
+                <a class="btn" href="lawn.html">LAWN MAINTENANCE</a>
+                <a class="btn" href="gallery.html">GALLERY</a> 
+                <a class="btn" href="form.html">FREE QUOTE</a> 
+            </div>
+        </section>
+
+        <section id="content" style="padding: 0 180px;">
+
+            <form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+                <h2 style="text-align: center; color:#251B37">FREE QUOTE</h2>
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Your name.." pattern="^[a-zA-Z]+$" title="Albhabets only">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Your last name.." pattern="^[a-zA-Z]+$" title="Albhabets only" >
+
+              <label for="Date">When you need the service</label>
+              <input type="date" name="DOS">
+
+              <label for="EmailId">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email Address"  >
+
+              <label for="Phone-number">Mobile Number</label>
+              <input type="number" id="number" name="number" placeholder="Your Mobile Number" required>  
+
+              <label for="services">Service</label>
+              <select id="service" name="services">
+                <option value="Snow Removal">Snow Removal</option>
+                <option value="Lawn Maintenance">Lawn Maintenance</option>
+               
+              </select>
+
+              <label for="question">Question</label>
+              <textarea id="question" name="question" placeholder="Type your question here...." style="height:200px;"></textarea>
+          
+             <p style="text-align: center;"><input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;
+             <input type="reset" value="Reset"></p> 
+          
+            </form>
+
+
+        </section>
+
+        <section class="footer">
+            <div >
+             
+                <h3><strong>Address</strong></h3>
+                <p>ABC Street<br>
+                Calgary<br>
+                999-999-9999<br>
+               Email:&nbsp;lawnandsnow@abc.com</p>
+              
+              </div>
+
+        </section>
+      
+      <script src="../JS/index.js"></script>
+        </body>
+</html>
